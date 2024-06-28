@@ -1,2 +1,7 @@
-# UD_SU24
-Repository for code from Universal Design for Digital Media Summer 24
+# Jingle-icious.github.io/UD_SU24
+
+
+This is my repo for ATLS3150.
+
+## Assignments
+[Assignment #6]
