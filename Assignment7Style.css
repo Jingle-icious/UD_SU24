@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    color: green; 
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: purple;
+  }
+  
+  p {
+    color: gray;
+    font-size: 1.2em;
+  }
+  
+  strong {
+    color: green; 
+  }
+  
+  em a {
+    color: gray;
+    text-decoration: none;
+    font-style: italic;
+  }
+  
+  em a:hover {
+    color: blue; 
+  }
+  
+  ul, ol {
+    padding: 5px 20px;
+    border-radius: 4px;
+    list-style-type: none;
+    margin: 20px 0;
+  }
+  
+  ul {
+    border: 2px solid orange;
+  }
+  
+  ol {
+    border: 2px solid purple;
+    counter-reset: list-counter; 
+  }
+  
+  ol li {
+    margin: 5px 0;
+    font-size: 1.2em;
+    counter-increment: list-counter; 
+  }
+  
+  ol li:before {
+    content: counter(list-counter) ". "; 
+    color: purple; 
+  }
