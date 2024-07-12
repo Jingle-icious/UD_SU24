@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>2024 Proposal Form</title>
+<link rel="stylesheet" href="Assignment11Style.css" />
+</head>
+<body>
+
+<div id="wrapper">
+    <form id="proposal2024" onsubmit="showThankYouModal(); return false;">
+        
+        <h1>2024 Proposal Form</h1>
+        
+        <p>A form to propose an individual as a speaker. Fields with an asterisk (*) a light yellow background are required.</p>
+        
+        <fieldset>
+            <legend>Speaker Info</legend>
+            <ul>
+                <li>
+                    <label for="fstspkr1" class="reqfield">First Name:</label>
+                    <input id="fstspkr1" name="fstspkr1" type="text" class="reqfield" />
+                </li>
+                <li>
+                    <label for="lstname1" class="reqfield">Last Name:</label>
+                    <input id="lstname1" name="lstname1" type="text" class="reqfield" />
+                </li>
+                <li>
+                    <label for="spkrtitle1">Title:</label>
+                    <input id="spkrtitle1" name="spkrtitle1" type="text" maxlength="48" />
+                </li>
+                <li>
+                    <label for="company1">Company:</label>
+                    <input id="company1" name="company1" type="text" />
+                </li>
+                <li>
+                    <label for="department1">Department:</label>
+                    <input id="department1" name="department1" type="text" />
+                </li>
+                <li>
+                    <label for="address1" class="reqfield">Address:</label>
+                    <input id="address1" name="address1" type="text" class="reqfield" />
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Type of Presentation</legend>
+            <p>
+                <label class="radio-label" for="TypeofPres_lec">
+                    <input value="1" id="TypeofPres_lec" name="p-type" type="radio" tabindex="1" /> Lecture
+                </label>
+            </p>
+            <p>
+                <label class="radio-label" for="TypeofPres_lab">
+                    <input value="2" id="TypeofPres_lab" name="p-type" type="radio" tabindex="2" /> Lab
+                </label>
+            </p>
+        </fieldset>
+
+        <p class="submit-button">
+            <input type="submit" value="Submit your proposal" />
+        </p>
+
+    </form>
+</div> <!-- end wrapper div -->
+
+<!-- The Modal -->
+<div id="thankYouModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Thanks for Submitting!</p>
+    </div>
+</div>
+
+<script>
+    function showThankYouModal() {
+        var modal = document.getElementById("thankYouModal");
+        var span = document.getElementsByClassName("close")[0];
+
+        modal.style.display = "block";
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
